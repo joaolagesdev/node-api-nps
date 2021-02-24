@@ -1,18 +1,16 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm"
 import { v4 as uuid} from "uuid";
-@Entity("users")
-class User {
-    
+
+@Entity("surveys")
+class Survey {
     @PrimaryColumn()
     readonly id: string;
 
-    @Column() 
-    // se o nome do atributo for diferente do nome da coluna no banco, 
-    // você passa o nome da coluna como parâmetro ex:"userName"
-    name: string;
+    @Column()
+    title: string;
 
     @Column()
-    email: string;
+    description: string;
 
     @CreateDateColumn()
     created_at: Date;
@@ -24,4 +22,4 @@ class User {
     }
 }
 
-export { User }
+export { Survey }
