@@ -10,20 +10,20 @@ export class CreateSurveys1614171153963 implements MigrationInterface {
                     {
                         name: "id",
                         type: "uuid",
-                        isPrimary: true,
+                        isPrimary: true
                     },
                     {
                         name: "title",
-                        type: "varchar",
+                        type: "varchar"
                     },
                     {
                         name: "description",
-                        type: "varchar",
+                        type: "varchar"
                     },
                     {
                         name: "created_at",
                         type: "timestamp",
-                        default: "now()",
+                        default: "now()"
                     }
                 ]
             })

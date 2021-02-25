@@ -9,20 +9,20 @@ export class CreateUsers1614089540843 implements MigrationInterface {
                     {
                         name: "id",
                         type: "uuid",
-                        isPrimary: true,
+                        isPrimary: true
                     },
                     {
                         name: "name",
-                        type: "varchar",
+                        type: "varchar"
                     },
                     {
                         name: "email",
-                        type: "varchar",
+                        type: "varchar"
                     },
                     {
                         name: "created_at",
                         type: "timestamp",
-                        default: "now()",
+                        default: "now()"
                     }
                 ]
             })
